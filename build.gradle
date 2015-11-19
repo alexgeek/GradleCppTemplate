@@ -1,0 +1,10 @@
+apply plugin: 'cpp'
+
+model {
+  components {
+    main(NativeExecutableSpec)
+  }
+}
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.9'
+}
